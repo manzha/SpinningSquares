@@ -9,3 +9,5 @@
 	-Added font assets
 	-Added GUI Text
 	-Added game name in menu's background
+	-Added rotation scripts 
+	-Added shuffling script

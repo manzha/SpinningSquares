@@ -31,6 +31,9 @@ public class StartGame : MonoBehaviour {
 	private List<GameObject> BoxList;
 	private List<Material> MaterialsList;
 
+	public GUIText CounterText;
+	private float timer;
+
 
 	//Fisher-Yates shuffle
 	public void Shuffle()  
@@ -68,10 +71,14 @@ public class StartGame : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+
 		if (Updated)
 		{
 			AssignMaterials();
 			Updated = false;
+			timer += 1;
+			CounterText.text = timer.ToString("F0");
 		}
 				
 	}
